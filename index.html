@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>hi</title>
+	<link id="favicon" rel="icon" type="image/x-icon" href="assets/favicon_wb.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body bgcolor="black" text="white">
+
+	<table height="100%" width="100%">
+	<tr>
+	<td align="center" valign="middle"><h1>hi</h1></td>
+	</tr>
+	</table>
+
+	<script>
+		let theme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
+		localStorage.setItem('theme', theme);
+
+		document.body.bgColor = (theme === 'dark') ? 'black' : 'white';
+		document.body.style.color = (theme === 'dark') ? 'white' : 'black';
+
+		const favicon = document.getElementById("favicon");
+		favicon.href = (theme === "dark") ? "assets/favicon_wb.ico" : "assets/favicon_bw.ico";
+	</script>
+</body>
+</html>
