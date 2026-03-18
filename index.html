@@ -13,7 +13,7 @@
 	</table>
 
 	<script>
-		let theme = localStorage.getItem('hi') === 'wb' ? 'bw' : 'wb';
+		let hi = localStorage.getItem('hi') === 'wb' ? 'bw' : 'wb';
 		localStorage.setItem('hi', hi);
 
 		document.body.bgColor = (hi === 'wb') ? 'black' : 'white';
