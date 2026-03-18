@@ -13,14 +13,14 @@
 	</table>
 
 	<script>
-		let theme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
-		localStorage.setItem('theme', theme);
+		let theme = localStorage.getItem('hi') === 'wb' ? 'bw' : 'wb';
+		localStorage.setItem('hi', hi);
 
-		document.body.bgColor = (theme === 'dark') ? 'black' : 'white';
-		document.body.style.color = (theme === 'dark') ? 'white' : 'black';
+		document.body.bgColor = (hi === 'wb') ? 'black' : 'white';
+		document.body.style.color = (hi === 'wb') ? 'white' : 'black';
 
 		const favicon = document.getElementById("favicon");
-		favicon.href = (theme === "dark") ? "assets/favicon_wb.ico" : "assets/favicon_bw.ico";
+		favicon.href = (hi === "wb") ? "assets/favicon_wb.ico" : "assets/favicon_bw.ico";
 	</script>
 </body>
 </html>
