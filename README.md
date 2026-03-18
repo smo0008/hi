@@ -1,3 +1,1 @@
-hi
-
-stupid website lmfao
+Pointless website i made for fun.
